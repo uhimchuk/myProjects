@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    //Test
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seedra</title>
+    <link rel="stylesheet" type="text/css" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo">
+            <a class="header__logo-link" href="#"><img src="img/logo.png" alt="SEEDRA" /></a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="">all products</a></li>
+              <li class="nav__item"><a class="nav__link" href="">about seedra</a></li>
+              <li class="nav__item"><a class="nav__link" href="">our blog</a></li>
+              <li class="nav__item"><a class="nav__link" href="">contacts</a></li>
+            </ul>
+            <div class="header__socials">
+              <a class="header__facebook-icon-link" href="#"><img src="img/instagram-icon.png" alt="Instagram icon" /></a>
+              <a class="header__facebook-icon-link" href="#"><img src="img/facebook-icon.png" alt="Facebook icon" /></a>
+            </div>
+          </nav>
+          <div class="header__interaction">
+            <div class="header__input-container">
+              <input class="header__search-field" type="text" placeholder="Search"/>
+              
+            </div>
+            <div class="header__buttons">
+              <a href="" class="header__liked"><img src="img/like-icon.png" alt="Green hearth"/></a>
+              <a href="" class="header__cart"><img src="img/cart-icon.png" alt="Shopping cart"/></a>
+            </div>
+          </div>
+        </div>
+      </header>
+        <main class="main">
+          <div class="main__hero-block-container container">
+            <section class="main__hero-block hero-block">
+              <div class="hero-block__background">
+                <img class="leaf leaf-top-1" src="img/hero-bakground-top-leave.png" alt="">
+                <img class="leaf leaf-top-2" src="img/hero-background-second-top-leave.png" alt="">
+                <img class="leaf leaf-top-3" src="img/hero-background-third-top-leave.png" alt="">
+                <img class="leaf leaf-left" src="img/hero-background-left-leave.png" alt="">
+                <img class="leaf leaf-main" src="img/main-background-leaves.png" alt="Green leaves">
+              </div>
+              <div class="hero-block__text-block">
+                <h1 class="hero-block__title">SEEDRA Basil Seeds for Indoor and Outdoor Planting</h1>
+                <p class="hero-block__text">Be sure of our quality - the freshest batches of this season. Non-GMO, Heirloom - our seeds were tested and have the best germination ratings. Your easy growing experience is our guarantee</p>
+                <div class="hero-block__price">
+                  <img src="img/fire-icon.svg" alt="">
+                  <p class="hero-block__discount">$12.56</p>
+                  <p class="hero-block__full-price">$15.56</p>
+                </div>
+                <a href="" class="hero-block__add-button button">Add to card</a>
+                <a href="" class="hero-block__discover-button button">Discover</a>
+              </div>
+              <div class="hero-block__seed">
+                <img src="img/seed-image.png" alt="Pack of seed">
+              </div>
+            </section>
+          </div>
+          <section class="main__selling container">
+            <h4 class="main__selling-title">We sell seeds</h4>
+            <p class="main__selling-subtitle">that always sprout and gardening supplies which never break</p>
+          </section>
+          <div class="main__shop shop container">
+            <section class="shop__title">
+              <h2>Our products.</h2>
+              <a class="shop__title-button" href="#">View all</a>
+            </section>
+            <div class="shop__filter">
+              <button class="shop__filter-button-all filter-button"><img src="img/button-all-icon.svg" alt="">All</button>
+              <button class="shop__filter-button-bundles filter-button"><img src="img/bundles-button-icon.svg" alt="">Bundles</button>
+              <button class="shop__filter-button-herbs filter-button"><img src="img/herbs-button-icon.svg" alt="">Herbs</button>
+              <button class="shop__filter-button-vegetables filter-button"><img src="img/vegetables-button-icon.svg" alt="">Vegetables</button>
+              <button class="shop__filter-button-fruits filter-button"><img src="img/fruits-button-icon.svg" alt="">Fruits</button>
+              <button class="shop__filter-button-supplies filter-button"><img src="img/supplies-button-icon.svg" alt="">Supplies</button>
+              <button class="shop__filter-button-flowers filter-button"><img src="img/flower-button-icon.svg" alt="">Flowers</button>
+            </div>
+            <div class="main__shop-cards shop-cards">
+              <div class="shop-cards__product-card product-card">
+                <img src="img/cilantra-seed.png" alt="Pack of cilantra seed" class="product-card__img">
+                <div class="product-card__like"></div>
+                <div class="product-card__about">
+                  <div class="product-card__rating rating">
+                    <div class="rating__stars">
+                      <div class="rating__stars-items">
+                        <input id="rating__stars-item-5" class="rating__stars-item" type="radio" name="stars-rating" value="5">
+                        <label class="rating__stars-item-label" for="rating__stars-item-5"></label>
+                        <input id="rating__stars-item-4" class="rating__stars-item" type="radio" name="stars-rating" value="4">
+                        <label class="rating__stars-item-label" for="rating__stars-item-4"></label>
+                        <input id="rating__stars-item-3" class="rating__stars-item" type="radio" name="stars-rating" value="3">
+                        <label class="rating__stars-item-label" for="rating__stars-item-3"></label>
+                        <input id="rating__stars-item-2" class="rating__stars-item" type="radio" name="stars-rating" value="2">
+                        <label class="rating__stars-item-label" for="rating__stars-item-2"></label>
+                        <input id="rating__stars-item-1" class="rating__stars-item" type="radio" name="stars-rating" value="1">
+                        <label class="rating__stars-item-label" for="rating__stars-item-1"></label>
+                      </div>
+                    </div>
+                    <p class="rating__count">
+                      (123)
+                    </p>
+                  </div>
+                  <p class="product-card__product-name">Seedra Cilantro Seeds for Planting Indoor and Outdoor</p>
+                  <div class="product-card__footer">
+                    <p class="product-card__price">$12.56</p>
+                      <button class="product-card__cart-button">
+                        <img src="img/cart-icon.png" alt="Cart icon">
+                      </button>
+                  </div>
+                </div>
+              </div>
+                <div class="shop-cards__product-card product-card">
+                  <img src="img/corn-seed.png" alt="Pack of cilantra seed" class="product-card__img">
+                  <div class="product-card__like"></div>
+                  <div class="product-card__about">
+                    <div class="product-card__rating rating">
+                      <div class="rating__stars">
+                        <div class="rating__stars-items">
+                          <input id="rating__stars-item-10" class="rating__stars-item" type="radio" name="stars-rating" value="10">
+                          <label class="rating__stars-item-label" for="rating__stars-item-10"></label>
+                          <input id="rating__stars-item-9" class="rating__stars-item" type="radio" name="stars-rating" value="9">
+                          <label class="rating__stars-item-label" for="rating__stars-item-9"></label>
+                          <input id="rating__stars-item-8" class="rating__stars-item" type="radio" name="stars-rating" value="8">
+                          <label class="rating__stars-item-label" for="rating__stars-item-8"></label>
+                          <input id="rating__stars-item-7" class="rating__stars-item" type="radio" name="stars-rating" value="7">
+                          <label class="rating__stars-item-label" for="rating__stars-item-7"></label>
+                          <input id="rating__stars-item-6" class="rating__stars-item" type="radio" name="stars-rating" value="6">
+                          <label class="rating__stars-item-label" for="rating__stars-item-6"></label>
+                        </div>
+                      </div>
+                      <p class="rating__count">
+                        (123)
+                      </p>
+                    </div>
+                    <p class="product-card__product-name">Seedra Cilantro Seeds for Planting Indoor and Outdoor</p>
+                    <div class="product-card__footer">
+                      <p class="product-card__price">$12.56</p>
+                        <button class="product-card__cart-button">
+                          <img src="img/cart-icon.png" alt="Cart icon">
+                        </button>
+                    </div>
+                  </div>
+                </div>
+                  <div class="shop-cards__product-card product-card">
+                    <img src="img/spinach-seed.png" alt="Pack of cilantra seed" class="product-card__img">
+                    <div class="product-card__like"></div>
+                    <div class="product-card__about">
+                      <div class="product-card__rating rating">
+                        <div class="rating__stars">
+                          <div class="rating__stars-items">
+                            <input id="rating__stars-item-15" class="rating__stars-item" type="radio" name="stars-rating" value="15">
+                            <label class="rating__stars-item-label" for="rating__stars-item-15"></label>
+                            <input id="rating__stars-item-14" class="rating__stars-item" type="radio" name="stars-rating" value="14">
+                            <label class="rating__stars-item-label" for="rating__stars-item-14"></label>
+                            <input id="rating__stars-item-13" class="rating__stars-item" type="radio" name="stars-rating" value="13">
+                            <label class="rating__stars-item-label" for="rating__stars-item-13"></label>
+                            <input id="rating__stars-item-12" class="rating__stars-item" type="radio" name="stars-rating" value="12">
+                            <label class="rating__stars-item-label" for="rating__stars-item-12"></label>
+                            <input id="rating__stars-item-11" class="rating__stars-item" type="radio" name="stars-rating" value="11">
+                            <label class="rating__stars-item-label" for="rating__stars-item-11"></label>
+                          </div>
+                        </div>
+                        <p class="rating__count">
+                          (123)
+                        </p>
+                      </div>
+                      <p class="product-card__product-name">Seedra Cilantro Seeds for Planting Indoor and Outdoor</p>
+                      <div class="product-card__footer">
+                        <p class="product-card__price">$12.56</p>
+                          <button class="product-card__cart-button">
+                            <img src="img/cart-icon.png" alt="Cart icon">
+                          </button>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="shop-cards__product-card product-card">
+                      <img src="img/cilantra-seed.png" alt="Pack of cilantra seed" class="product-card__img">
+                      <div class="product-card__like"></div>
+                      <div class="product-card__about">
+                        <div class="product-card__rating rating">
+                          <div class="rating__stars">
+                            <div class="rating__stars-items">
+                              <input id="rating__stars-item-20" class="rating__stars-item" type="radio" name="stars-rating" value="20">
+                              <label class="rating__stars-item-label" for="rating__stars-item-20"></label>
+                              <input id="rating__stars-item-19" class="rating__stars-item" type="radio" name="stars-rating" value="19">
+                              <label class="rating__stars-item-label" for="rating__stars-item-19"></label>
+                              <input id="rating__stars-item-18" class="rating__stars-item" type="radio" name="stars-rating" value="18">
+                              <label class="rating__stars-item-label" for="rating__stars-item-18"></label>
+                              <input id="rating__stars-item-17" class="rating__stars-item" type="radio" name="stars-rating" value="17">
+                              <label class="rating__stars-item-label" for="rating__stars-item-17"></label>
+                              <input id="rating__stars-item-16" class="rating__stars-item" type="radio" name="stars-rating" value="16">
+                              <label class="rating__stars-item-label" for="rating__stars-item-16"></label>
+                            </div>
+                          </div>
+                          <p class="rating__count">
+                            (123)
+                          </p>
+                        </div>
+                        <p class="product-card__product-name">Seedra Cilantro Seeds for Planting Indoor and Outdoor</p>
+                        <div class="product-card__footer">
+                          <p class="product-card__price">$12.56</p>
+                            <button class="product-card__cart-button">
+                              <img src="img/cart-icon.png" alt="Cart icon">
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="shop-cards__product-card product-card">
+                        <img src="img/corn-seed.png" alt="Pack of cilantra seed" class="product-card__img">
+                        <div class="product-card__like"></div>
+                        <div class="product-card__about">
+                          <div class="product-card__rating rating">
+                            <div class="rating__stars">
+                              <div class="rating__stars-items">
+                                <input id="rating__stars-item-25" class="rating__stars-item" type="radio" name="stars-rating" value="25">
+                                <label class="rating__stars-item-label" for="rating__stars-item-25"></label>
+                                <input id="rating__stars-item-24" class="rating__stars-item" type="radio" name="stars-rating" value="24">
+                                <label class="rating__stars-item-label" for="rating__stars-item-24"></label>
+                                <input id="rating__stars-item-23" class="rating__stars-item" type="radio" name="stars-rating" value="23">
+                                <label class="rating__stars-item-label" for="rating__stars-item-23"></label>
+                                <input id="rating__stars-item-22" class="rating__stars-item" type="radio" name="stars-rating" value="22">
+                                <label class="rating__stars-item-label" for="rating__stars-item-22"></label>
+                                <input id="rating__stars-item-21" class="rating__stars-item" type="radio" name="stars-rating" value="21">
+                                <label class="rating__stars-item-label" for="rating__stars-item-21"></label>
+                              </div>
+                            </div>
+                            <p class="rating__count">
+                              (123)
+                            </p>
+                          </div>
+                          <p class="product-card__product-name">Seedra Cilantro Seeds for Planting Indoor and Outdoor</p>
+                          <div class="product-card__footer">
+                            <p class="product-card__price">$12.56</p>
+                              <button class="product-card__cart-button">
+                                <img src="img/cart-icon.png" alt="Cart icon">
+                              </button>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="shop-cards__product-card product-card">
+                          <img src="img/spinach-seed.png" alt="Pack of cilantra seed" class="product-card__img">
+                          <div class="product-card__like"></div>
+                          <div class="product-card__about">
+                            <div class="product-card__rating rating">
+                              <div class="rating__stars">
+                                <div class="rating__stars-items">
+                                  <input id="rating__stars-item-30" class="rating__stars-item" type="radio" name="stars-rating" value="30">
+                                  <label class="rating__stars-item-label" for="rating__stars-item-30"></label>
+                                  <input id="rating__stars-item-29" class="rating__stars-item" type="radio" name="stars-rating" value="29">
+                                  <label class="rating__stars-item-label" for="rating__stars-item-29"></label>
+                                  <input id="rating__stars-item-28" class="rating__stars-item" type="radio" name="stars-rating" value="28">
+                                  <label class="rating__stars-item-label" for="rating__stars-item-28"></label>
+                                  <input id="rating__stars-item-27" class="rating__stars-item" type="radio" name="stars-rating" value="27">
+                                  <label class="rating__stars-item-label" for="rating__stars-item-27"></label>
+                                  <input id="rating__stars-item-26" class="rating__stars-item" type="radio" name="stars-rating" value="26">
+                                  <label class="rating__stars-item-label" for="rating__stars-item-26"></label>
+                                </div>
+                              </div>
+                              <p class="rating__count">
+                                (123)
+                              </p>
+                            </div>
+                            <p class="product-card__product-name">Seedra Cilantro Seeds for Planting Indoor and Outdoor</p>
+                            <div class="product-card__footer">
+                              <p class="product-card__price">$12.56</p>
+                                <button class="product-card__cart-button">
+                                  <img src="img/cart-icon.png" alt="Cart icon">
+                                </button>
+                            </div>
+                            </div>
+                          </div>
+              </div>
+            </div>
+            <div class="main__blog container blog">
+              <div class="blog__title-container">
+                <h2 class="blog__title">Our Blog.</h2>
+                <a class="blog__blog-button" href="">Go to our blog</a>
+              </div>
+              <div class="blog__content-preview-container">
+                <article class="blog__content-preview blog__content-preview1">
+                  <div class="blog__card content-preview-card">
+                    <div class="content-preview-card__date">
+                      <img src="img/blog-content-title-clock-icon.png" alt="">
+                      <span>12.09.2021</span>
+                    </div>
+                    <div class="content-preview-card__title">
+                      <h4>How to plant spinach correctly in winter</h4>
+                      <p class="content-preview-card__title-text">In most areas, successive sowing can be done from early spring until early winter, but more often during hotter months...</p>
+                    </div>
+                    <a class="content-preview-card__link" href="">Read</a>
+                  </div>
+                  <img class="preview-card__image" src="img/card-preview-spinach-image.png" alt="">
+                </article>
+                <article class="blog__content-preview blog__content-preview2">
+                  <div class="blog__card content-preview-card">
+                    <div class="content-preview-card__date">
+                      <img src="img/blog-content-title-clock-icon.png" alt="">
+                      <span>12.09.2021</span>
+                    </div>
+                    <div class="content-preview-card__title">
+                      <h4>How to plant spinach correctly in winter</h4>
+                      <p class="content-preview-card__title-text" >In most areas, successive sowing can be done from early spring until early winter, but more often during hotter months...</p>
+                    </div>
+                    <a class="content-preview-card__link" href="">Read</a>
+                  </div>
+                  <img class="preview-card__image" src="img/female-gardener-holding-wicker-basket-with-strawberries.png" alt="">
+                </article>
+                <article class="blog__content-preview blog__content-preview3">
+                  <div class="blog__card content-preview-card">
+                    <div class="content-preview-card__date">
+                      <img src="img/blog-content-title-clock-icon.png" alt="">
+                      <span>12.09.2021</span>
+                    </div>
+                    <div class="content-preview-card__title">
+                      <h4>How to plant spinach correctly in winter</h4>
+                    </div>
+                    <a class="content-preview-card__link" href="">Read</a>
+                  </div>
+                  <img class="preview-card__image" src="img/blog-content-preview-strawberry.png" alt="">
+                </article>
+                <article class="blog__content-preview blog__content-preview4">
+                  <div class="blog__card content-preview-card">
+                    <div class="content-preview-card__date">
+                      <img src="img/blog-content-title-clock-icon.png" alt="">
+                      <span>12.09.2021</span>
+                    </div>
+                    <div class="content-preview-card__title">
+                      <h4>How to plant spinach correctly in winter</h4>
+                    </div>
+                    <a class="content-preview-card__link" href="">Read</a>
+                  </div>
+                  <img class="preview-card__image" src="img/blog-content-preview-strawberry.png" alt="">
+                </article>
+              </div>
+            </div>
+        </main>
+  </body>
+</html>
