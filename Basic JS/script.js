@@ -91,6 +91,9 @@ alert("Javascript is awesome!");
 
 */
 
+
+/*
+                    ВИСЕЛИЦА
 var words = [
     "cat",
     "monkey",
@@ -135,3 +138,132 @@ if (remainingAttempts < 1) {
 }
 alert(answerArray.join(" "));
 alert("Awesome! Word for guess was " + word);
+*/
+/*
+          Random Words  
+
+let pickRandomWord = function(words) {
+    return words[Math.floor(Math.random() * words.length)];
+};
+
+let randomWords = ["book", "sport", "car", "monday", "wednesday"];
+
+pickRandomWOrd(randomWords);
+
+*/
+/*
+let pickRandomWord = function(words) {
+    return words[Math.floor(Math.random() * words.length)];
+};
+var generaterandomInsult = function() {
+let randomBodyParts = ["nose", "eyes", "mouth", "ears"];
+let randomAdjectives = ["clymsy", "smeling", "stupid"];
+let randomAnimal = ["moneky", "donkey", "rat"];
+let randomString = "You have " + pickRandomWord(randomBodyParts) + " like a " + pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomAnimal) + "!!!";
+return randomString;
+};
+
+let fifthLetter = function (name) { 
+    if (name.lenth < 5){
+        return;
+    }
+    return "Fifth letter of your name is " + name[4] + ".";
+};
+
+let medalForScore = function (score) {
+    if (score < 3) {
+        return "Bronze";
+    }
+    if (score < 7) {
+        return "Silver";
+    }
+    return "Golden";
+};
+*/
+
+/*       ADD adn MULTIPLY
+
+function add (a, b){
+    return a + b;
+}
+function multiply (a, b) {
+    return a * b;
+}
+*/
+
+/*     COMPARE ARRAYS
+
+var areArraySimilar = function (array1, array2) {
+    if (array1.length !== array2.length) {
+        return false;
+    }
+    for (var i = 0; i < array1.length; i++) {
+        if (array1[i] !== array2[i]) {
+            return false;
+        }
+    }
+    return true;
+};
+*/
+
+//                  HANGMAN
+
+// Создайте здесь свои функции
+var pickWord = function () {
+    var words = [
+        "программа",
+        "макака",
+        "прекрасны",
+        "оладушек"
+    ];
+
+    return words[Math.floor(Math.random() * words.length)];
+}
+var setupAnswerArray = function (word) {
+    var answerArray = [];
+    for (var i = 0; i < word.length; i++) {
+        answerArray[i] = "_";
+    }
+    return answerArray;
+}
+var showPlayerProgress = function (answerArray) {
+    alert (answerArray.join(" "));
+}
+var getGuess = function () {
+    return prompt("Угадайте букву, или нажмите Отмена для выхода из игры.");
+}
+var updateGameState = function (guess, word, answerArray) {
+    var appearances = 0;
+    for (var j = 0; j < word.length; j++){
+        if (word[j] === guess) {
+            answerArray[j] = guess;
+            appearances++;
+        }
+    }
+    return appearances;
+}
+var showAnswerAndCongratulatePlayer = function (answerArray){
+    showPlayerProgress(answerArray);
+    alert("Поздравляем вы отгадали слово" + answerArray.join(" "));
+}
+// word: загаданое слово
+var word = pickWord();
+
+var answerArray = setupAnswerArray(word);
+//remaininLetters:
+var remainingLetters = word.length;
+while (remainingLetters > 0) {
+    showPlayerProgress(answerArray);
+    //guess:
+    var guess = getGuess();
+    if (guess === null){
+        break;
+    } else if (guess.length !== 1) {
+        alert ("Пожалуйста, введите одиночную букву.");
+    } else {
+        //correctGuesses: 
+        var correctGuesses = updateGameState (guess, word, answerArray);
+        remainingLetters -= correctGuesses;
+    }
+}
+showAnswerAndCongratulatePlayer(answerArray);
